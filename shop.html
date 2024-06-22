@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Plugers - Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Moon Plugers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Shop Our Collection</h2>
+            <div class="products-container">
+                <button class="scroll-button left" onclick="scrollProducts(-1)">&#8249;</button>
+                <div class="products">
+                    <div class="product">
+                        <img src="images/product1.jpg" alt="Moon T-Shirt">
+                        <h3>Moon T-Shirt</h3>
+                        <p>$19.99</p>
+                        <button onclick="orderNow('Moon T-Shirt')">Order Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="images/product2.jpg" alt="Galaxy Hoodie">
+                        <h3>Galaxy Hoodie</h3>
+                        <p>$39.99</p>
+                        <button onclick="orderNow('Galaxy Hoodie')">Order Now</button>
+                    </div>
+                    <div class="product">
+                        <img src="images/product3.jpg" alt="Starry Scarf">
+                        <h3>Starry Scarf</h3>
+                        <p>$14.99</p>
+                        <button onclick="orderNow('Starry Scarf')">Order Now</button>
+                    </div>
+                    <!-- Add more products as needed -->
+                </div>
+                <button class="scroll-button right" onclick="scrollProducts(1)">&#8250;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Moon Plugers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
